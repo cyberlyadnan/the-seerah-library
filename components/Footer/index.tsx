@@ -22,7 +22,7 @@ const Footer = () => {
                     height={30}
                   />
                   <Image
-                    src="/images/logo/company-logo.webp"
+                    src="/images/logo/company-logo-white.webp"
                     alt="logo"
                     className="hidden w-full dark:block"
                     width={140}

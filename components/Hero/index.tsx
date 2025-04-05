@@ -41,7 +41,7 @@ const Hero = () => {
                 alt="Architectural Design"
                 width={600}
                 height={600}
-                className=""
+                className="opacity-40 md:opacity-80"
               />
             </div>
           </div>

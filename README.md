@@ -1,46 +1,42 @@
-# Startup - Free Next.js Startup Website Template
+# The Seerah Library 📚✨
 
-Startup free, open-source, and premium-quality startup website template for Next.js comes with everything you need to launch a startup, business, or SaaS website, including all essential sections, components, and pages.
+**The Seerah Library** is a curated platform where readers can discover, explore, and review books dedicated to the Seerah (biography) of Prophet Muhammad ﷺ. Our goal is to make it easy for seekers of knowledge to find trusted, authentic, and impactful Seerah literature in one place.
 
-If you're looking for a high-quality and visually appealing, feature-rich Next.js Template for your next startup, SaaS, or business website, this is the perfect choice and starting point for you!
+---
 
-### ✨ Key Features
-- Crafted for Startup and SaaS Business
-- Next.js 13 and Tailwind CSS
-- All Essential Business Sections and Pages
-- High-quality and Clean Design
-- Dark and Light Version
-- TypeScript Support
-and Much More ...
+## 🌟 Features
 
-### [🔥 Get Startup Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+- 📖 Browse a growing collection of Seerah books
+- 📝 Read and write reviews based on authenticity, readability, and impact
+- 🔍 Filter books by author, language, popularity, and more
+- 🌐 Support for multiple languages
+- 🕌 Islamic-inspired clean and minimal UI
+- 🌙 Dark mode support
+- 📷 Hero images & banners inspired by Islamic heritage
+- 🔐 Authentication for posting reviews
+- 🧠 Admin dashboard for managing content
 
-[![Startup Pro](https://cdn.nextjstemplates.com/Startup-Pro---Next.js-Starter-Template-for-SaaS-Startups-282e26f7-f543-4ae4-a777-ac306c08cce8.png)](https://nextjstemplates.com/templates/saas-starter-startup)
+---
 
-Startup Pro - Expertly crafted for fully-functional, high-performing SaaS startup websites. Comes with with Authentication, Database, Blog, and all the essential integrations necessary for SaaS business sites.
+## 📷 Live Preview
 
+> Coming Soon! (Add your deployment URL here once hosted)
 
-### [🚀 View Free Demo](https://startup.nextjstemplates.com/)
+---
 
-### [🚀 View Pro Demo](https://startup-pro.nextjstemplates.com/)
+## 💻 Tech Stack
 
-### [📦 Download](https://nextjstemplates.com/templates/startup)
+- **Frontend**: Next.js 14 (App Router), TailwindCSS
+- **Backend**: Firebase / Appwrite / Supabase *(select based on your setup)*
+- **Authentication**: Google Auth (via Firebase Auth)
+- **Deployment**: Vercel / Netlify *(recommended)*
+- **Design**: Custom illustrations, Islamic-themed assets
 
-### [🔥 Get Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+---
 
-### [🔌 Documentation](https://nextjstemplates.com/docs)
+## 🚀 Getting Started
 
-### ⚡ Deploy Now
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNextJSTemplates%2Fstartup-nextjs)
-
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NextJSTemplates/startup-nextjs)
-
-
-### 📄 License
-Startup is 100% free and open-source, feel free to use with your personal and commercial projects.
-
-### 💜 Support
-If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
-
-### ✨ Explore and Download - Free [Next.js Templates](https://nextjstemplates.com)
+### 1. Clone the repo
+```bash
+git clone https://github.com/your-username/the-seerah-library.git
+cd the-seerah-library

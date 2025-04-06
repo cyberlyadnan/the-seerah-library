@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import { getBookById } from "@/hooks/get/getBookById";
 import { SeerahBook } from "@/types/seerahBook";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 export async function generateMetadata({
   params,
@@ -37,9 +38,7 @@ export default async function BookDetailPage({
 }: {
   params: { bookId: string };
 }) {
-  console.log("params", params);
   const book = await getBookById(params.bookId);
-  console.log("book", book);
   if (!book) {
     notFound();
   }
@@ -66,11 +65,11 @@ export default async function BookDetailPage({
                           />
                         </div>
                       </div>
-                      <div className="w-full">
+                      <Link href={`/author-details/${book?.authorId}`} className="w-full">
                         <span className="mb-1 text-base font-medium text-body-color">
                           By <span>{book.author.name}</span>
                         </span>
-                      </div>
+                      </Link>
                     </div>
                     <div className="mb-5 flex items-center">
                       <p className="mr-5 flex items-center text-base font-medium text-body-color">

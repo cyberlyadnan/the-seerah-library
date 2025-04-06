@@ -20,9 +20,6 @@ export const metadata: Metadata = {
 };
 
 
-    
-
-
 export default async function Home() {
   return (
     <>

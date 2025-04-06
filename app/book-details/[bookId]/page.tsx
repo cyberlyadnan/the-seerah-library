@@ -152,10 +152,7 @@ export default async function BookDetailPage({
                   </p>
                   <div className="relative z-10 mb-10 overflow-hidden rounded-md bg-primary bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9">
                     <p className="text-center text-base font-medium italic text-body-color">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod incididunt utionals labore et dolore magna
-                      aliqua. Quis lobortis scelerisque fermentum, The Neque ut
-                      etiam sit amet.
+Discover, review, and reflect on authentic books that narrate the life and legacy of the Prophet Muhammad (ﷺ). The Seerah Library brings together readers and seekers from around the world—offering detailed book reviews, scholarly insights, and a trusted platform to explore the Seerah like never before.
                     </p>
                     <span className="absolute left-0 top-0 z-[-1]">
                       <svg

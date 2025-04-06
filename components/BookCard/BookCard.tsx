@@ -14,7 +14,8 @@ const BookCard = ({ book }: { book: SeerahBook }) => {
         author, 
         tags, 
         publishDate,
-        genre 
+        genre,
+        authorId,
       } = book;
   return (
     <div className="wow fadeInUp hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-bg-color shadow-one duration-300 dark:bg-dark" data-wow-delay=".1s">
@@ -54,9 +55,9 @@ const BookCard = ({ book }: { book: SeerahBook }) => {
           {/* Author */}
           <div className="flex items-center border-opacity-10 pb-4 dark:border-white dark:border-opacity-10 sm:pb-0 sm:pr-4">
             <div className="w-full">
-              <h4 className="text-xs font-semibold text-dark dark:text-white sm:text-sm mb-1">
+              <Link href={`/author-details/${authorId}`} className="text-xs font-semibold text-dark dark:text-white sm:text-sm mb-1">
                 By {author.name}
-              </h4>
+              </Link>
               <p className="text-[10px] text-body-color sm:text-xs">{author.designation}</p>
             </div>
           </div>

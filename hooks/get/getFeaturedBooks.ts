@@ -13,6 +13,6 @@ export async function getFeaturedBooks() {
     id: doc.id,
     ...doc.data(),
   })) as SeerahBook[];
-
-  return books;
+  console.log("Featured books data:", books); // Debugging line
+  return books; 
 }

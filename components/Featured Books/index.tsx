@@ -12,6 +12,7 @@ import { SeerahBook } from "@/types/seerahBook";
 
 const FeaturedBooks = async () => {
   const books:SeerahBook[] = await getFeaturedBooks(); // Server-side fetching
+  console.log( "books", books); // Debugging line 
   return (
     <section className="relative z-10 bg-bg-light py-16 dark:bg-bg-color-dark md:py-20 lg:py-28">
       <div className="container">

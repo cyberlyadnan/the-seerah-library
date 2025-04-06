@@ -88,62 +88,6 @@ const seerahBooksData: SeerahBook[] = [
     tags: ["spiritual", "character"],
     publishDate: "2007",
   },
-  {
-    id: 7,
-    title: "Fiqh-us-Seerah (Understanding the Life of the Prophet)",
-    paragraph:
-      "An analytical approach to the Seerah, connecting events to modern life and practical lessons.",
-    image: "https://m.media-amazon.com/images/I/51VztmB+9DL.jpg",
-    author: {
-      name: "Muhammad Al-Ghazali",
-      image: "/images/testimonials/auth-01.png",
-      designation: "Egyptian Scholar",
-    },
-    tags: ["analytical", "modern lessons"],
-    publishDate: "1997",
-  },
-  {
-    id: 8,
-    title: "Muhammad: Man and Prophet",
-    paragraph:
-      "A comprehensive and scholarly Seerah combining narration with contextual understanding.",
-    image: "https://m.media-amazon.com/images/I/51VztmB+9DL.jpg",
-    author: {
-      name: "Adil Salahi",
-      image: "/images/testimonials/auth-01.png",
-      designation: "Islamic Historian",
-    },
-    tags: ["scholarly", "comprehensive"],
-    publishDate: "2008",
-  },
-  {
-    id: 9,
-    title: "Muhammad: The Ideal Prophet",
-    paragraph:
-      "Focuses on the Prophet’s ﷺ ideal moral character and leadership, written by a renowned Indian scholar.",
-    image: "https://m.media-amazon.com/images/I/51VztmB+9DL.jpg",
-    author: {
-      name: "Maulana Sulaiman Nadwi",
-      image: "/images/testimonials/auth-01.png",
-      designation: "Islamic Thinker",
-    },
-    tags: ["moral", "inspirational"],
-    publishDate: "1935",
-  },
-  {
-    id: 10,
-    title: "Hayatus Sahabah (Lives of the Companions)",
-    paragraph:
-      "While focused on the Sahabah, it richly complements the Seerah through their love and service for the Prophet ﷺ.",
-    image: "https://m.media-amazon.com/images/I/51VztmB+9DL.jpg",
-    author: {
-      name: "Maulana Muhammad Yusuf Kandhlawi",
-      image: "/images/testimonials/auth-01.png",
-      designation: "Tablighi Scholar",
-    },
-    tags: ["companions", "supporting seerah"],
-    publishDate: "20th Century",
-  },
 ];
 
 export default seerahBooksData;

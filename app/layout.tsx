@@ -24,10 +24,12 @@ export default function RootLayout({
 
       <body className={`bg-bg-color dark:bg-black ${inter.className}`}>
         <Providers>
-          <Header />
-          {children}
-          <Footer />
-          <ScrollToTop />
+          <AppProvider>
+            <Header />
+            {children}
+            <Footer />
+            <ScrollToTop />
+          </AppProvider>
         </Providers>
       </body>
     </html>
@@ -35,3 +37,4 @@ export default function RootLayout({
 }
 
 import { Providers } from "./providers";
+import { AppProvider } from "@/context/AppContext";

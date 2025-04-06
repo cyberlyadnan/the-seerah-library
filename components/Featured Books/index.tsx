@@ -3,10 +3,13 @@ import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
 import blogData from "../Blog/blogData";
 import BookCard from "../BookCard/BookCrad";
-import seerahBooksData from "./booksData";
+import { createBook } from "@/hooks/post/useCreateBook";
+import { useEffect } from "react";
+import { getFeaturedBooks } from "@/hooks/get/getFeaturedBooks";
 
-
-const FeaturedBooks = () => {
+const FeaturedBooks = async () => {
+  const books = await getFeaturedBooks(); // Server-side fetching
+  console.log(books, "books");
   return (
     <section className="relative z-10 bg-bg-light py-16 dark:bg-bg-color-dark md:py-20 lg:py-28">
       <div className="container">
@@ -18,10 +21,10 @@ const FeaturedBooks = () => {
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-x-8 gap-y-10 md:grid-cols-4 md:gap-x-6 lg:gap-x-8 xl:grid-cols-4">
-          {seerahBooksData.slice(0,6).map((blog) => (
-            <div key={blog.id} className="w-full">
-              <BookCard blog={blog} />
+        <div className="grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-4 md:gap-x-6 lg:gap-x-8 xl:grid-cols-4">
+          {books?.slice(0, 6).map((book) => (
+            <div key={book.id} className="w-full">
+              <BookCard book={book} />
             </div>
           ))}
         </div>

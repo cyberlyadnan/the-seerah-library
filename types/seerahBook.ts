@@ -1,12 +1,6 @@
-// types/seerahBook.ts
-export interface Author {
-    id: string;
-    name: string;
-    image: string;
-    designation: string;
-    bio?: string; // Optional field
-  }
-  
+import { Author } from "./author";
+
+// This file defines the types for the Seerah Book data model.  
   export interface SeerahBook {
     id: string; // Changed from number to string to match Firebase ID
     title: string;

@@ -1,4 +1,4 @@
-import { Blog } from "@/types/blog";
+import { book } from "@/types/book";
 import { SeerahBook } from "@/types/seerahBook";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,7 +17,7 @@ const BookCard = ({ book }: { book: SeerahBook }) => {
   return (
     <div className="wow fadeInUp hover:shadow-two dark:hover:shadow-gray-dark group relative overflow-hidden rounded-sm bg-bg-color shadow-one duration-300 dark:bg-dark" data-wow-delay=".1s">
       {/* Image with tag - Changed to portrait aspect ratio */}
-      <Link href={`/blog-details/${id}`} className="relative block aspect-[2/3] w-full">
+      <Link href={`/book-details/${id}`} className="relative block aspect-[2/3] w-full">
         <span className="absolute right-3 top-3 z-20 inline-flex items-center justify-center rounded-full bg-primary px-3 py-1 text-xs font-semibold capitalize text-white sm:right-4 sm:top-4 sm:px-3 sm:py-1 sm:text-sm md:right-6 md:top-6 md:px-4 md:py-2">
           {tags[0]}
         </span>
@@ -35,7 +35,7 @@ const BookCard = ({ book }: { book: SeerahBook }) => {
         {/* Title */}
         <h3>
           <Link
-            href={`/blog-details/${id}`}
+            href={`/book-details/${id}`}
             className="mb-3 block text-sm font-bold text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-sm md:text-xl "
           >
             {title}

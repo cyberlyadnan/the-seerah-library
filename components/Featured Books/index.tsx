@@ -6,10 +6,11 @@ import BookCard from "../BookCard/BookCrad";
 import { createBook } from "@/hooks/post/useCreateBook";
 import { useEffect } from "react";
 import { getFeaturedBooks } from "@/hooks/get/getFeaturedBooks";
+import { FiArrowRight } from "react-icons/fi";
+import Link from "next/link";
 
 const FeaturedBooks = async () => {
   const books = await getFeaturedBooks(); // Server-side fetching
-  console.log(books, "books");
   return (
     <section className="relative z-10 bg-bg-light py-16 dark:bg-bg-color-dark md:py-20 lg:py-28">
       <div className="container">
@@ -28,6 +29,18 @@ const FeaturedBooks = async () => {
             </div>
           ))}
         </div>
+        <div className="flex justify-center items-center pt-8">
+        <Link href="/books" className="mx-auto group relative hover:bg-primary bg-bg-color hover:text-white inline-flex items-center justify-center px-6 py-3 text-lg font-medium text-dark bg-gradient-to-r from-primary-500 to-primary-600 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+              <span className="relative z-10 flex items-center">
+                Explore More
+                <FiArrowRight className="ml-2 h-5 w-5 transition-all duration-300 group-hover:translate-x-1" />
+              </span>
+              
+              {/* Animated background elements */}
+              <span className="absolute inset-0 bg-gradient-to-r from-primary-600 to-primary-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <span className="absolute top-0 left-0 w-full h-0.5 bg-white opacity-20 group-hover:opacity-40 transition-opacity duration-500"></span>
+            </Link>
+      </div>
       </div>
       <div className="absolute right-0 top-5 z-[-1]">
         <svg

@@ -1,21 +1,37 @@
-// hooks/useBookById.ts
-import { useQuery } from "@tanstack/react-query";
+// lib/firebase/books.ts
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/firebase/firebase";
+import { SeerahBook } from "@/types/seerahBook";
 
-export const useBookById = (bookId: string) => {
-  return useQuery({
-    queryKey: ["book", bookId],
-    queryFn: async () => {
-      const docRef = doc(db, "books", bookId);
-      const snap = await getDoc(docRef);
+export async function getBookById(bookId: string): Promise<SeerahBook | null> {
+  try {
+    const bookRef = doc(db, "books", bookId);
+    const bookSnap = await getDoc(bookRef);
 
-      if (!snap.exists()) {
-        throw new Error("Book not found");
-      }
-
-      return { id: snap.id, ...snap.data() };
-    },
-    enabled: !!bookId, // only run when bookId is available
-  });
-};
+    if (bookSnap.exists()) {
+      const data = bookSnap.data();
+      console.log("Book data:", data); // Debugging line
+      return {
+        id: bookSnap.id,
+        title: data.title,
+        description: data.description,
+        coverImage: data.coverImage,
+        tags: data.tags || [],
+        publishDate: data.publishDate,
+        language: data.language || "English",
+        genre: data.genre || [],
+        author: data.author, // This could be just authorId if you fetch separately
+        isFeatured: data.isFeatured || false,
+        rating: data.rating || 0,
+        totalRatings: data.totalRatings || 0,
+        totalReviews: data.totalReviews || 0,
+        createdAt: data.createdAt?.toDate(),
+        updatedAt: data.updatedAt?.toDate()
+      };
+    }
+    return null;
+  } catch (error) {
+    console.error("Error getting book:", error);
+    return null;
+  }
+}

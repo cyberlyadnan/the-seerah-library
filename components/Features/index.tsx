@@ -1,8 +1,12 @@
+import { createAuthor } from "@/hooks/post/useCreateAuthor";
 import SectionTitle from "../Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
+import { Author } from "@/types/author";
+import { authorsData } from "@/constants/data";
 
 const Features = () => {
+  
   return (
     <>
       <section id="features" className="py-16 md:py-20 lg:py-20">

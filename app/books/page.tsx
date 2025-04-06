@@ -1,19 +1,19 @@
-import SingleBlog from "@/components/Blog/SingleBlog";
-import blogData from "@/components/Blog/blogData";
-import BookCard from "@/components/BookCard/BookCrad";
+import BookCard from "@/components/BookCard/BookCard";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { getFeaturedBooks } from "@/hooks/get/getFeaturedBooks";
+import { SeerahBook } from "@/types/seerahBook";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Books Page | The Seerah Library",
-  description: "This is Blog Page for Startup Nextjs Template",
-  // other metadata
+  title: "Explore Seerah Books | The Seerah Library",
+  description:
+    "Browse our curated collection of Seerah books on the life of Prophet Muhammad ﷺ. Discover authentic biographies, historical insights, and reflections to deepen your knowledge.",
 };
 
-const Blog = async () => {
-  const books = await getFeaturedBooks(); // Server-side fetching
+
+const ExploreBooksPage = async () => {
+  const books :SeerahBook[] = await getFeaturedBooks(); // Server-side fetching
   return (
     <>
       <Breadcrumb
@@ -99,4 +99,5 @@ const Blog = async () => {
   );
 };
 
-export default Blog;
+export default ExploreBooksPage;
+

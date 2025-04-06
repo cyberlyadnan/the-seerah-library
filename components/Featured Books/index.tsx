@@ -2,15 +2,16 @@ import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
 import blogData from "../Blog/blogData";
-import BookCard from "../BookCard/BookCrad";
+import BookCard from "../BookCard/BookCard";
 import { createBook } from "@/hooks/post/useCreateBook";
 import { useEffect } from "react";
 import { getFeaturedBooks } from "@/hooks/get/getFeaturedBooks";
 import { FiArrowRight } from "react-icons/fi";
 import Link from "next/link";
+import { SeerahBook } from "@/types/seerahBook";
 
 const FeaturedBooks = async () => {
-  const books = await getFeaturedBooks(); // Server-side fetching
+  const books:SeerahBook[] = await getFeaturedBooks(); // Server-side fetching
   return (
     <section className="relative z-10 bg-bg-light py-16 dark:bg-bg-color-dark md:py-20 lg:py-28">
       <div className="container">

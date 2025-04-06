@@ -1,5 +1,6 @@
 import { getFirestore, collection, getDocs, orderBy, limit, query } from "firebase/firestore";
 import { app } from "@/firebase/firebase";
+import { SeerahBook } from "@/types/seerahBook";
 
 const db = getFirestore(app);
 
@@ -11,7 +12,7 @@ export async function getFeaturedBooks() {
   const books = snapshot.docs.map((doc) => ({
     id: doc.id,
     ...doc.data(),
-  }));
+  })) as SeerahBook[];
 
   return books;
 }

@@ -21,6 +21,7 @@ export async function getBookById(bookId: string): Promise<SeerahBook | null> {
         language: data.language || "English",
         genre: data.genre || [],
         author: data.author, // This could be just authorId if you fetch separately
+        authorId: data.authorId,
         isFeatured: data.isFeatured || false,
         rating: data.rating || 0,
         totalRatings: data.totalRatings || 0,

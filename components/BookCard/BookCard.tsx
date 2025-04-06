@@ -1,9 +1,11 @@
-import { book } from "@/types/book";
+
 import { SeerahBook } from "@/types/seerahBook";
 import Image from "next/image";
 import Link from "next/link";
 
 const BookCard = ({ book }: { book: SeerahBook }) => {
+  console.log("BookCard Props:", book); // Debugging line
+  // Destructure properties from the book object
     const { 
         id,
         title, 

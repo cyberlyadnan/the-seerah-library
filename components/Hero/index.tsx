@@ -6,10 +6,10 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-bg-color pb-16 dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="relative z-10 overflow-hidden bg-bg-color pb-12 dark:bg-gray-dark md:pb-[80px] md:pt-[150px] xl:pb-[80px] xl:pt-[180px] 2xl:pb-[80px] 2xl:pt-[210px]"
       >
         <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col-reverse items-center gap-8 md:flex-row md:gap-12">
+          <div className="flex flex-col-reverse items-center gap-4 md:flex-row md:gap-12">
             {/* Left Side: Text Content */}
             <div className="text-center md:w-1/2 md:text-left">
               <h1 className="mb-5 text-3xl font-bold leading-tight text-primary dark:text-white sm:text-4xl md:text-5xl">
@@ -23,25 +23,25 @@ const Hero = () => {
                   href="https://github.com/cyberlyadnan"
                   className="rounded-full bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                 >
-                  Explore
+                  Explore Library 
                 </Link>
-                {/* <Link
-                  href="https://github.com/NextJSTemplates/startup-nextjs"
-                  className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
+                <Link
+                  href="https://github.com/cyberlyadnan"
+                  className="inline-block rounded-full bg-zinc-800 px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                 >
-                  Star on GitHub
-                </Link> */}
+                  Write a Review
+                </Link>
               </div>
             </div>
 
             {/* Right Side: Image */}
-            <div className="flex justify-center md:w-1/2">
+            <div className="flex justify-center pt-16 md:pt-0 md:w-1/2">
               <Image
                 src="/images/hero/building.webp"
-                alt="Architectural Design"
+                alt="Mosque"
                 width={600}
                 height={600}
-                className="opacity-40 md:opacity-80"
+                className="opacity-50 md:opacity-80"
               />
             </div>
           </div>

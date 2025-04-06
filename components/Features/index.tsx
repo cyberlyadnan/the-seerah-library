@@ -5,11 +5,11 @@ import featuresData from "./featuresData";
 const Features = () => {
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28">
-        <div className="container">
+      <section id="features" className="py-16 md:py-20 lg:py-20">
+        <div className="container w-full md:w-[70%] mx-auto">
           <SectionTitle
             title="About Us"
-            paragraph="Started in 2009, Gsource offers a unique combination of end-to-end customized Engineering Design and Drawing Solutions. We're at the forefront of advanced technologies, like AI, machine learning, drone photogrammetry, LiDAR data processing, product design simulations, digital mockups, engineering designs, BIM, VDC & digital twins, while catering to clients across industries like construction, fabrication, architectural, structural, electrical, general contractors, civil, geospatial & manufacturing."
+            paragraph="The Seerah Library is a platform designed for Muslims and seekers of knowledge to find, review, and share thoughts on authentic books about the life of Prophet Muhammad ﷺ. Our goal is to help people around the world discover the beauty of his Seerah through trusted literature."
             center
           />
 

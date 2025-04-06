@@ -6,9 +6,9 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-bg-color pb-12 dark:bg-gray-dark md:pb-[80px] md:pt-[150px] xl:pb-[80px] xl:pt-[180px] 2xl:pb-[80px] 2xl:pt-[210px]"
+        className="relative z-10 overflow-x-hidden bg-bg-color pb-12 dark:bg-gray-dark md:pb-[80px] md:pt-[150px] xl:pb-[80px] xl:pt-[180px] 2xl:pb-[80px] 2xl:pt-[210px]"
       >
-        <div className="container mx-auto px-4 py-6">
+        <div className="container mx-auto px-4 py-6 overflow-x-hidden">
           <div className="flex flex-col-reverse items-center gap-4 md:flex-row md:gap-12">
             {/* Left Side: Text Content */}
             <div className="text-center md:w-1/2 md:text-left">
@@ -41,7 +41,7 @@ const Hero = () => {
                 alt="Mosque"
                 width={600}
                 height={600}
-                className="opacity-50 md:opacity-80"
+                className="opacity-50 md:opacity-80 overflow-hidden"
               />
             </div>
           </div>
